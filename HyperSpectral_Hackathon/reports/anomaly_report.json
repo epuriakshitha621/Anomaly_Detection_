@@ -1,0 +1,108 @@
+{
+  "report_title": "Hyperspectral Anomaly Detection Report",
+  "domain": "Agriculture \u2014 Indian Pines Dataset",
+  "timestamp": "2026-04-24 11:53:42",
+  "hackathon": "FusionX Hackathon 2026",
+  "team": "Infinity_Crew FXH26-E-AIML-039",
+  "summary": {
+    "total_pixels_analyzed": 21025,
+    "total_anomalies": 515,
+    "anomaly_percentage": 2.45,
+    "severity_breakdown": {
+      "CRITICAL": 15,
+      "MEDIUM": 73,
+      "LOW": 139
+    }
+  },
+  "top_affected_crops": [
+    {
+      "crop": "\u2b1b Background",
+      "count": 228
+    },
+    {
+      "crop": "\ud83d\udca7 Stone Steel Towers",
+      "count": 67
+    },
+    {
+      "crop": "\ud83e\uded8 Soybean Min-Till",
+      "count": 62
+    },
+    {
+      "crop": "\ud83c\udf32 Woods",
+      "count": 52
+    },
+    {
+      "crop": "\ud83c\udf3d Corn No-Till",
+      "count": 37
+    }
+  ],
+  "methodology": {
+    "step1": "PCA dimensionality reduction (200 \u2192 30 bands)",
+    "step2": "RX Detector \u2014 statistical background modeling",
+    "step3": "Dense Autoencoder \u2014 spectral reconstruction",
+    "step4": "Score fusion (50% RX + 50% AE)",
+    "step5": "XGBoost classification + SHAP explainability"
+  },
+  "top_alerts": [
+    {
+      "rank": 1,
+      "alert": "\ud83d\udea8 CRITICAL ANOMALY \u2014 \ud83c\udf3d Corn \u2014 HIGH STRESS \u2014 Immediate attention needed",
+      "score": 0.1159,
+      "severity": "HIGH"
+    },
+    {
+      "rank": 2,
+      "alert": "\ud83d\udea8 CRITICAL ANOMALY \u2014 \ud83c\udf3d Corn \u2014 HIGH STRESS \u2014 Immediate attention needed",
+      "score": 0.1163,
+      "severity": "HIGH"
+    },
+    {
+      "rank": 3,
+      "alert": "\ud83d\udea8 CRITICAL ANOMALY \u2014 \ud83c\udf3d Corn \u2014 HIGH STRESS \u2014 Immediate attention needed",
+      "score": 0.1173,
+      "severity": "HIGH"
+    },
+    {
+      "rank": 4,
+      "alert": "\ud83d\udea8 CRITICAL ANOMALY \u2014 \ud83c\udf3d Corn \u2014 HIGH STRESS \u2014 Immediate attention needed",
+      "score": 0.1199,
+      "severity": "HIGH"
+    },
+    {
+      "rank": 5,
+      "alert": "\ud83d\udea8 CRITICAL ANOMALY \u2014 \ud83c\udf3d Corn \u2014 HIGH STRESS \u2014 Immediate attention needed",
+      "score": 0.1084,
+      "severity": "HIGH"
+    },
+    {
+      "rank": 6,
+      "alert": "\ud83d\udea8 CRITICAL ANOMALY \u2014 \ud83c\udf3d Corn \u2014 HIGH STRESS \u2014 Immediate attention needed",
+      "score": 0.1069,
+      "severity": "HIGH"
+    },
+    {
+      "rank": 7,
+      "alert": "\ud83d\udea8 CRITICAL ANOMALY \u2014 \ud83c\udf3d Corn \u2014 HIGH STRESS \u2014 Immediate attention needed",
+      "score": 0.1452,
+      "severity": "HIGH"
+    },
+    {
+      "rank": 8,
+      "alert": "\ud83d\udea8 CRITICAL ANOMALY \u2014 \ud83c\udf3d Corn \u2014 HIGH STRESS \u2014 Immediate attention needed",
+      "score": 0.1288,
+      "severity": "HIGH"
+    },
+    {
+      "rank": 9,
+      "alert": "\ud83d\udea8 CRITICAL ANOMALY \u2014 \ud83c\udf3d Corn \u2014 HIGH STRESS \u2014 Immediate attention needed",
+      "score": 0.1268,
+      "severity": "HIGH"
+    },
+    {
+      "rank": 10,
+      "alert": "\ud83d\udea8 CRITICAL ANOMALY \u2014 \ud83c\udf3d Corn \u2014 HIGH STRESS \u2014 Immediate attention needed",
+      "score": 0.1082,
+      "severity": "HIGH"
+    }
+  ]
+}

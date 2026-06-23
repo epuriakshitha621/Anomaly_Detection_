@@ -1,0 +1,93 @@
+{
+  "report_title": "Defence Hyperspectral Target Detection Report",
+  "domain": "Defence \u2014 Pavia University Urban Dataset",
+  "dataset_info": "ROSIS sensor | 610x610 pixels | 103 bands | Cropped 200x200",
+  "timestamp": "2026-04-24 22:47:39",
+  "hackathon": "FusionX Hackathon 2026",
+  "team": "Infinity_Crew FXH26-E-AIML-039",
+  "summary": {
+    "total_pixels": 40000,
+    "targets_detected": 627,
+    "detection_rate": 1.57,
+    "severity_breakdown": {
+      "CRITICAL": 239,
+      "MEDIUM": 0,
+      "LOW": 1
+    }
+  },
+  "target_classes": {
+    "primary_targets": "Class 5 \u2014 Painted Metal Sheets (vehicles)",
+    "secondary_targets": "Class 9 \u2014 Shadow zones (concealment)",
+    "watch_zones": "Class 7,8 \u2014 Bitumen & Bricks"
+  },
+  "methodology": {
+    "dataset": "Pavia University (ROSIS sensor, urban scene)",
+    "step1": "PCA: 103 bands \u2192 30 components",
+    "step2": "RX Detector: Mahalanobis distance",
+    "step3": "Autoencoder: Spectral reconstruction error",
+    "step4": "Fusion: 50% RX + 50% AE",
+    "step5": "XGBoost + SHAP explainability"
+  },
+  "top_threats": [
+    {
+      "rank": 1,
+      "alert": "\ud83d\udea8 CRITICAL \u2014 \ud83c\udfaf Painted Metal Sheet \u2014 METAL TARGET DETECTED \u2014 Possible vehicle!",
+      "score": 0.1294,
+      "severity": "HIGH"
+    },
+    {
+      "rank": 2,
+      "alert": "\ud83d\udea8 CRITICAL \u2014 \ud83c\udfaf Painted Metal Sheet \u2014 METAL TARGET DETECTED \u2014 Possible vehicle!",
+      "score": 0.1199,
+      "severity": "HIGH"
+    },
+    {
+      "rank": 3,
+      "alert": "\ud83d\udea8 CRITICAL \u2014 \ud83c\udfaf Painted Metal Sheet \u2014 METAL TARGET DETECTED \u2014 Possible vehicle!",
+      "score": 0.1342,
+      "severity": "HIGH"
+    },
+    {
+      "rank": 4,
+      "alert": "\ud83d\udea8 CRITICAL \u2014 \ud83c\udfaf Painted Metal Sheet \u2014 METAL TARGET DETECTED \u2014 Possible vehicle!",
+      "score": 0.1334,
+      "severity": "HIGH"
+    },
+    {
+      "rank": 5,
+      "alert": "\ud83d\udea8 CRITICAL \u2014 \ud83c\udfaf Painted Metal Sheet \u2014 METAL TARGET DETECTED \u2014 Possible vehicle!",
+      "score": 0.1338,
+      "severity": "HIGH"
+    },
+    {
+      "rank": 6,
+      "alert": "\ud83d\udea8 CRITICAL \u2014 \ud83c\udfaf Painted Metal Sheet \u2014 METAL TARGET DETECTED \u2014 Possible vehicle!",
+      "score": 0.1043,
+      "severity": "HIGH"
+    },
+    {
+      "rank": 7,
+      "alert": "\ud83d\udea8 CRITICAL \u2014 \ud83c\udfaf Painted Metal Sheet \u2014 METAL TARGET DETECTED \u2014 Possible vehicle!",
+      "score": 0.126,
+      "severity": "HIGH"
+    },
+    {
+      "rank": 8,
+      "alert": "\ud83d\udea8 CRITICAL \u2014 \ud83c\udfaf Painted Metal Sheet \u2014 METAL TARGET DETECTED \u2014 Possible vehicle!",
+      "score": 0.1354,
+      "severity": "HIGH"
+    },
+    {
+      "rank": 9,
+      "alert": "\ud83d\udea8 CRITICAL \u2014 \ud83c\udfaf Painted Metal Sheet \u2014 METAL TARGET DETECTED \u2014 Possible vehicle!",
+      "score": 0.1354,
+      "severity": "HIGH"
+    },
+    {
+      "rank": 10,
+      "alert": "\ud83d\udea8 CRITICAL \u2014 \ud83c\udfaf Painted Metal Sheet \u2014 METAL TARGET DETECTED \u2014 Possible vehicle!",
+      "score": 0.1344,
+      "severity": "HIGH"
+    }
+  ]
+}

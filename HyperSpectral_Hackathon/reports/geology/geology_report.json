@@ -1,0 +1,52 @@
+{
+    "report_title": "Geological Survey \u2014 Hyperspectral Anomaly Detection Report",
+    "dataset": "Cuprite Nevada (Synthetic)",
+    "model": "Dense Autoencoder (30\u219264\u219232\u219216\u219232\u219264\u219230) + XGBoost",
+    "domain": "Geology / Mineral Mapping",
+    "team": "INFINITY_CREW",
+    "timestamp": "2026-04-24 21:42:27",
+    "summary": {
+        "total_pixels": 10000,
+        "anomalies_detected": 115,
+        "anomaly_rate_percent": 1.15,
+        "threshold": 0.035421
+    },
+    "severity_breakdown": {
+        "LOW": 9885,
+        "MEDIUM": 112,
+        "HIGH": 3,
+        "CRITICAL": 0
+    },
+    "mineral_breakdown": {
+        "Alunite or Muscovite": 112,
+        "Buddingtonite (ammonium feldspar)": 3
+    },
+    "critical_zones_count": 0,
+    "top_10_critical_zones": [
+        {
+            "pixel_index": 9178,
+            "mse_score": 0.053545,
+            "zone": "Buddingtonite Zone",
+            "mineral": "Buddingtonite (ammonium feldspar)",
+            "severity": "HIGH",
+            "action": "PRIORITY \u2014 rare mineral zone detected"
+        },
+        {
+            "pixel_index": 5486,
+            "mse_score": 0.053497,
+            "zone": "Buddingtonite Zone",
+            "mineral": "Buddingtonite (ammonium feldspar)",
+            "severity": "HIGH",
+            "action": "PRIORITY \u2014 rare mineral zone detected"
+        },
+        {
+            "pixel_index": 1044,
+            "mse_score": 0.053428,
+            "zone": "Buddingtonite Zone",
+            "mineral": "Buddingtonite (ammonium feldspar)",
+            "severity": "HIGH",
+            "action": "PRIORITY \u2014 rare mineral zone detected"
+        }
+    ],
+    "recommendation": "Conduct ground-truth geological survey in flagged HIGH and CRITICAL zones. Priority areas show spectral signatures consistent with calcite and pyrope garnet deposits."
+}
